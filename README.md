@@ -9,3 +9,6 @@ On the cli, use `npm run docker:build` to build a Docker image for the applicati
 
 ## To create Docker container
 On the cli, use `npm run docker:start` to intialize an appliation container
+
+## To create Docker container
+Navigate to `http://localhost:3000/` to use application
