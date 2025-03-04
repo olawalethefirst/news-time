@@ -1,0 +1,1 @@
+export const cn = (...classnames: string[]) => classnames.join(" ")
