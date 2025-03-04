@@ -6,9 +6,7 @@ interface SearchBarProps {
   onSearch: (searchQuery: string) => unknown;
 }
 
-const SearchBar: React.FunctionComponent<SearchBarProps> = ({
-  onSearch,
-}) => {
+const SearchBar: React.FunctionComponent<SearchBarProps> = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
   const handleSearchEvent = (e: React.FormEvent<HTMLFormElement>) => {
@@ -23,7 +21,7 @@ const SearchBar: React.FunctionComponent<SearchBarProps> = ({
         placeholder="Search news..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
       />
       <button
         type="submit"

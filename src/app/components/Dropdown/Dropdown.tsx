@@ -45,7 +45,7 @@ const Dropdown: React.FunctionComponent<DropdownProps> = ({
   return (
     <div className="relative min-h-[42px] min-w-48 mx-w-64" ref={dropdownRef}>
       <button
-        className="p-2 w-full min-h-[42px] h-full border border-gray-300 rounded-lg text-left focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="cursor-pointer p-2 w-full min-h-[42px] h-full border border-gray-300 rounded-lg text-left focus:outline-none focus:ring-2 focus:ring-blue-600"
         onClick={() => setIsOpen(!isOpen)}
         disabled={disabled}
       >

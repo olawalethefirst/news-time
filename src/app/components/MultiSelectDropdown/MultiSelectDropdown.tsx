@@ -23,9 +23,11 @@ const MultiSelectDropdown: React.FunctionComponent<
   maxSelection,
   disabled,
   onOptionEndReached,
-  initialSelectedOptions
+  initialSelectedOptions,
 }) => {
-  const [selectedOptions, setSelectedOptions] = useState<string[]>(initialSelectedOptions || []);
+  const [selectedOptions, setSelectedOptions] = useState<string[]>(
+    initialSelectedOptions || []
+  );
   const [search, setSearch] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const filteredOptions = useMemo(() => {
@@ -81,7 +83,7 @@ const MultiSelectDropdown: React.FunctionComponent<
   return (
     <div className="relative w-full" ref={dropdownRef}>
       <div
-        className={`p-2 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+        className={`p-2 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 ${
           disabled ? "opacity-[0.5]" : ""
         }`}
         onClick={() => !disabled && setIsOpen((opened) => !opened)}
@@ -91,7 +93,7 @@ const MultiSelectDropdown: React.FunctionComponent<
             {selectedOptions.map((option, index) => (
               <span
                 key={index}
-                className="bg-blue-500 text-white text-sm px-2 py-1 rounded flex items-center"
+                className="bg-blue-600 text-white text-sm px-2 py-1 rounded flex items-center"
               >
                 {option}
                 <button

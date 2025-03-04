@@ -193,7 +193,7 @@ const NewsPreferences: FunctionComponent<PreferencesModalProps> = ({
         ))}
 
         <button
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          className="cursor-pointer mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           onClick={() => {
             onSave(sourcesData);
             onClose();

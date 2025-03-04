@@ -15,6 +15,14 @@ export const errorMessages = {
 
 export const newsSources = [
   {
+    key: "ny-times",
+    label: "NY Times",
+    features: {
+      fetchNews: getNYTimesNews,
+      fetchCategories: getNYTimesCategories,
+    },
+  },
+  {
     key: "guardian",
     label: "Guardian",
     features: {
@@ -28,14 +36,6 @@ export const newsSources = [
     label: "News API",
     features: {
       fetchNews: getNewsAPINews,
-    },
-  },
-  {
-    key: "ny-times",
-    label: "NY Times",
-    features: {
-      fetchNews: getNYTimesNews,
-      fetchCategories: getNYTimesCategories,
     },
   },
 ];

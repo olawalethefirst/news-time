@@ -12,7 +12,7 @@ const NewsList: React.FunctionComponent<NewsListProps> = ({
   return (
     <>
       {isLoading ? (
-        <div className="py-12 text-blue-800 text-align- w-full flex justify-center">
+        <div className="py-12 text-blue-700 text-align- w-full flex justify-center">
           {"LOADING..."}
         </div>
       ) : (

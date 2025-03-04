@@ -26,7 +26,7 @@ const DateRange: React.FunctionComponent<DateRangeProps> = ({
         type="date"
         value={startDate}
         onChange={handleStartDateChange}
-        className="p-2 w-1/2 border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+        className="p-2 w-1/2 border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 cursor-pointer"
         role="textbox"
         max={endDate}
       />
@@ -34,7 +34,7 @@ const DateRange: React.FunctionComponent<DateRangeProps> = ({
         type="date"
         value={endDate}
         onChange={handleEndDateChange}
-        className="p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+        className="p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-600 cursor-pointer"
         role="textbox"
         min={startDate}
       />
