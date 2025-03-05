@@ -11,9 +11,11 @@ const Accordion: FunctionComponent<PropsWithChildren<AccordionProps>> = ({
   isOpen,
   onToggle,
 }) => (
-  <div className="border rounded-lg mb-2">
+  <div className="border border-gray-300 rounded-lg mb-2">
     <button
-      className="w-full text-left px-4 py-2 bg-gray-200"
+      className={`w-full text-left px-4 py-2 bg-gray-200 ${
+        isOpen ? "rounded" : "rounded-t"
+      }`}
       onClick={onToggle}
     >
       {title}

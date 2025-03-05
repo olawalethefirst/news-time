@@ -161,7 +161,6 @@ const NewsPreferences: FunctionComponent<PreferencesModalProps> = ({
                     isLoadingOptions={features?.categories?.loading}
                     onSearchInput={features?.categories?.search}
                     disabled={!features?.categories}
-                    onOptionEndReached={features?.categories?.fetch}
                   />
                 </>
 
@@ -184,7 +183,6 @@ const NewsPreferences: FunctionComponent<PreferencesModalProps> = ({
                     onSearchInput={features?.authors?.search}
                     disabled={!features?.authors}
                     isLoadingOptions={features?.authors?.loading}
-                    onOptionEndReached={features?.authors?.fetch}
                   />
                 </>
               </>

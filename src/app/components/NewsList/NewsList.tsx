@@ -12,13 +12,46 @@ const NewsList: React.FunctionComponent<NewsListProps> = ({
   return (
     <>
       {isLoading ? (
-        <div className="py-12 text-blue-700 text-align- w-full flex justify-center">
-          {"LOADING..."}
+        <div className="py-12 text-gray-400 text-align- w-full flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid"
+            width="100"
+            height="100"
+            style={{
+              shapeRendering: "auto",
+              display: "block",
+            }}
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <circle
+                strokeDasharray="164.93361431346415 56.97787143782138"
+                r="35"
+                strokeWidth="10"
+                stroke="#d1d5dc"
+                fill="none"
+                cy="50"
+                cx="50"
+              >
+                <animateTransform
+                  keyTimes="0;1"
+                  values="0 50 50;360 50 50"
+                  dur="1s"
+                  repeatCount="indefinite"
+                  type="rotate"
+                  attributeName="transform"
+                ></animateTransform>
+              </circle>
+              <g></g>
+            </g>
+          </svg>
         </div>
       ) : (
         <>
           {items.length === 0 ? (
-            <div className="py-12 text-red-800 text-align- w-full flex justify-center">
+            <div className="py-12 text-blue-700 text-align- w-full flex justify-center">
               {"EMPTY"}
             </div>
           ) : (

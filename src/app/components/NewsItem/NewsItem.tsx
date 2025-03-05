@@ -9,6 +9,7 @@ const NewsItem: React.FunctionComponent<NewsItemType> = ({
   date,
   url,
 }) => {
+  const dateString = new Date(date).toDateString();
   return (
     <div className="rounded-lg space-y-3">
       <div className="relative w-full object-cover rounded h-[200px]">
@@ -16,7 +17,7 @@ const NewsItem: React.FunctionComponent<NewsItemType> = ({
       </div>
 
       <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
-      <p className="text-sm text-gray-500">{date}</p>
+      <p className="text-sm text-gray-500">{dateString}</p>
       {description && <p className="text-gray-700">{description}</p>}
       <a
         href={url}
