@@ -119,7 +119,7 @@ const MultiSelectDropdown: React.FunctionComponent<
             value={search}
             onChange={handleSearchInput}
             onKeyDown={handleAddCustomOption}
-            placeholder={placeholder}
+            placeholder={"Type to search"}
             className="w-full p-2 border-b border-gray-300 focus:outline-none"
           />
 

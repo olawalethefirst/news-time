@@ -197,7 +197,7 @@ const NewsPreferences: FunctionComponent<PreferencesModalProps> = ({
             onClose();
           }}
         >
-          save
+          Save
         </button>
       </div>
     </Modal>
